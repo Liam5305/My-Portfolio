@@ -10,7 +10,8 @@ export default function AboutPage() {
           width: 300,
           height: 200,
           marginLeft: 50,
-          paddingTop: 10
+          paddingTop: 10,
+          color: 'white'
         }}>
           <box>
             Hi, I'm Scottish and live in Glasgow. I enjoy building and designing web applications.

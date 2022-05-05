@@ -27,7 +27,8 @@ export default function EducationPage() {
     <>
         <Typography variant='h6' component="div" gutterBottom sx={{
           width: 300,
-          height: 200
+          height: 200,
+          color: 'white'
         }}>
           I started learning React.Js with Client Side Web Development in my BSc Honours Year to create a Single Page Application that used RESTAPI for an NC500 Route and Hostel list web page.
         </Typography>

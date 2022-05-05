@@ -8,8 +8,8 @@ export default function ImagePlacement() {
   return (
     <div className='language_images'>
       <img src={reactImg} alt={"reactImg"} width='170' height='150'/>
-      <img src={cssImg} alt={"cssImg"} width='130' height='150' />
-      <img src={htmlImg} alt={"htmlImg"} width='170' height='150' />
+      <img src={cssImg} alt={"cssImg"} width='130' height='150'/>
+      <img src={htmlImg} alt={"htmlImg"} width='170' height='150'/>
     </div>
   )
 }

@@ -9,13 +9,13 @@ const theme = createTheme({
     palette: {
         primary: {
 
-            main: '#121858',
+            main: '#ffffff',
         },
         secondary: {
-            light: '#0066ff',
-            main: '#0044ff',
+            light: '#ffffff',
+            main: '#ffffff',
 
-            contrastText: '#ffcc00',
+            contrastText: '#ffffff',
         },
         contrastThreshold: 3,
 
@@ -31,12 +31,12 @@ export default function ContactPage() {
                     <Box
                         component="form"
                         sx={{
-                            '& > :not(style)': { m: 1, width: '35ch' },
+                            '& > :not(style)': { m: 1, width: '35ch' },         
                         }}
                         noValidate
                         autoComplete="off"
                     >
-                        <TextField id="outlined-basic" label="Contact Me!" variant="outlined" />
+                        <TextField id="outlined-basic" label="Contact Me!" variant="outlined"/>
                         <br />
                         <TextField id="outlined-basic" label="Whats your Email?" variant="outlined" />
                         <br />

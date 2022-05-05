@@ -10,14 +10,14 @@ const theme = createTheme({
     palette: {
         primary: {
 
-            main: '#121858',
+            main: '#ffffff',
 
         },
         secondary: {
-            light: '#0066ff',
-            main: '#0044ff',
+            light: '#ffffff',
+            main: '#ffffff',
 
-            contrastText: '#ffcc00',
+            contrastText: '#ffffff',
         },
         contrastThreshold: 3,
 
@@ -32,11 +32,15 @@ export default function LandingPage() {
                 <br />
                 <br />
                 <br />
-                <Typography variant="h5" component="div" gutterBottom>
+                <Typography variant="h5" component="div" gutterBottom sx={{
+                    color: 'white'
+                }}>
                     Hi, I'm Liam.
                 </Typography>
                 <br />
-                <Typography variant="h6" component="div" gutterBottom>
+                <Typography variant="h6" component="div" gutterBottom sx={{
+                    color: 'white'
+                }}>
                     I'm Scottish, live in Glasgow and I love designing web applications.
                 </Typography>
                 <Button variant="text">Learn More</Button>
