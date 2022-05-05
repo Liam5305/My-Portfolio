@@ -1,35 +1,19 @@
 import React from 'react'
 
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import Button from "@mui/material/Button";
-
-const theme = createTheme({
-  palette: {
-    primary: {
-
-      main: '#ff4400',
-
-    },
-    secondary: {
-      light: '#0066ff',
-      main: '#0044ff',
-
-      contrastText: '#ffcc00',
-    },
-    contrastThreshold: 3,
-
-    tonalOffset: 0.2,
-  },
-});
+// import ImagePlacement from '../components/ImagePlacement'
 
 export default function AboutPage() {
   return (
     <>
-      <ThemeProvider theme={theme}>
-          <Typography variant="h7" component="div" gutterBottom>
+        <Typography variant="body1" component="div" gutterBottom sx={{
+          width: 300,
+          height: 200,
+          marginLeft: 50,
+          paddingTop: 10
+        }}>
+          <box>
             Hi, I'm Scottish and live in Glasgow. I enjoy building and designing web applications.
-            <br />
             <br />
             I've always been interested with computers since I was younger.
             <br />
@@ -44,8 +28,9 @@ export default function AboutPage() {
             <br />
             <br />
             In 2021, I started BSc Honours Degree for Computer Science which allowed me to learn a variety of topics.
-          </Typography>
-      </ThemeProvider>
+          </box>
+        </Typography>
+        {/* <ImagePlacement/> */}
     </>
   )
 }
