@@ -1,7 +1,7 @@
-import React from 'react'
+import * as React from 'react'
 
 import Typography from '@mui/material/Typography';
-// import ImagePlacement from '../components/ImagePlacement'
+import ImagePlacement from '../components/ImagePlacement'
 
 export default function AboutPage() {
   return (
@@ -30,7 +30,7 @@ export default function AboutPage() {
             In 2021, I started BSc Honours Degree for Computer Science which allowed me to learn a variety of topics.
           </box>
         </Typography>
-        {/* <ImagePlacement/> */}
+        <ImagePlacement/>
     </>
   )
 }

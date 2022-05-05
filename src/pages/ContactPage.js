@@ -27,24 +27,26 @@ export default function ContactPage() {
     return (
         <>
             <ThemeProvider theme={theme}>
-                <Box
-                    component="form"
-                    sx={{
-                        '& > :not(style)': { m: 1, width: '25ch' },
-                    }}
-                    noValidate
-                    autoComplete="off"
-                >
-                    <TextField id="outlined-basic" label="Contact Me!" variant="outlined" />
-                    <br />
-                    <TextField id="outlined-basic" label="Whats your Email?" variant="outlined" />
-                    <br />
-                    <TextField id="outlined-basic" label="Subject Header" variant="outlined" />
-                    <br />
-                    <TextField id="outlined-basic" label="What is your Query?" variant="outlined" />
-                    <br />
-                    <Button variant="outlined">Send!</Button>
-                </Box>
+                <div className='email-form'>
+                    <Box
+                        component="form"
+                        sx={{
+                            '& > :not(style)': { m: 1, width: '35ch' },
+                        }}
+                        noValidate
+                        autoComplete="off"
+                    >
+                        <TextField id="outlined-basic" label="Contact Me!" variant="outlined" />
+                        <br />
+                        <TextField id="outlined-basic" label="Whats your Email?" variant="outlined" />
+                        <br />
+                        <TextField id="outlined-basic" label="Subject Header" variant="outlined" />
+                        <br />
+                        <TextField id="outlined-basic" label="What is your Query?" variant="outlined" />
+                        <br />
+                        <Button variant="outlined">Send!</Button>
+                    </Box>
+                </div>
             </ThemeProvider>
         </>
     )
