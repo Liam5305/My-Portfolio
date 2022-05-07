@@ -1,10 +1,9 @@
-import React from 'react';
+import * as React from 'react';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Button from "@mui/material/Button";
-
-import AboutPage from "./AboutPage";
+import ImagePlacement from "../components/ImagePlacement"
 
 const theme = createTheme({
     palette: {
@@ -28,25 +27,22 @@ const theme = createTheme({
 export default function LandingPage() {
     return (
         <>
+            <Typography variant="h6" component="div" gutterBottom sx={{
+                color: 'white',
+                marginLeft: 30,
+                paddingTop: 10,
+                width: 350
+            }}>
+                Hi, I'm Liam. I'm Scottish and live in Glasgow and I love designing web applications.
+                <br />
+            </Typography>
+            <br />
             <ThemeProvider theme={theme}>
-                <br />
-                <br />
-                <br />
-                <Typography variant="h5" component="div" gutterBottom sx={{
-                    color: 'white'
-                }}>
-                    Hi, I'm Liam.
-                </Typography>
-                <br />
-                <Typography variant="h6" component="div" gutterBottom sx={{
-                    color: 'white'
-                }}>
-                    I'm Scottish, live in Glasgow and I love designing web applications.
-                </Typography>
-                <Button variant="text">Learn More</Button>
+                <Button variant="text" sx={{
+                    marginLeft: 29
+                }}>Learn More</Button>
             </ThemeProvider>
-
-            {/* <img src= */}
+            <ImagePlacement />
         </>
     )
 };
