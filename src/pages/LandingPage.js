@@ -42,7 +42,9 @@ export default function LandingPage() {
                     marginLeft: 29
                 }}>Learn More</Button>
             </ThemeProvider>
-            <ImagePlacement />
+            <div className='homeImgPlacement' >
+                <ImagePlacement />
+            </div>
         </>
     )
 };
