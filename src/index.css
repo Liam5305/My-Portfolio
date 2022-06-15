@@ -42,10 +42,24 @@ a:active {
     background-color: grey;
 }
 
+.about_text {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    width: 20%;
+    margin-top: -205px;
+    margin-left: 340px;
+}
+
 .homeImgPlacement {
     position: absolute;
     margin-top: -150px;
     margin-left: 590px;
+}
+
+.aboutImgPlacement {
+    position: absolute;
+    margin-top: -210px;
+    margin-left: 720px;
 }
 
 .reactLogoPlacement {
