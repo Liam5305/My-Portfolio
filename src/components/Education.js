@@ -6,7 +6,27 @@ import ReactLogo from "../components/imgs/ReactLogo.png";
 import JsLogo from "../components/imgs/JsLogo.png"
 import NodeLogo from "../components/imgs/NodeJs.png"
 
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+
+const theme = createTheme({
+    palette: {
+        primary: {
+
+            main: '#ffffff',
+
+        },
+        secondary: {
+            light: '#ffffff',
+            main: '#ffffff',
+
+            contrastText: '#ffffff',
+        },
+        contrastThreshold: 3,
+
+        tonalOffset: 0.2,
+    },
+});
 
 export default function EducationPageText() {
     return (

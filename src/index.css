@@ -42,24 +42,50 @@ a:active {
     background-color: grey;
 }
 
-.about_text {
+.aboutPage_Text1 {
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    width: 20%;
-    margin-top: -205px;
-    margin-left: 340px;
+    width: 100%;
+    margin-top: -230px;
+    margin-left: -380px;
+    list-style: none;
+    padding: 10px;
 }
 
-.homeImgPlacement {
+.aboutPage_Text2 {
+    color: white;
+    width: 100%;
+    margin-top: -725px;
+    margin-left: -70px;
+    list-style: none;
+    padding: 10px;
+}
+
+.aboutPage_Text2 li {
+    text-decoration: underline;
+}
+
+.aboutPage_Text3 {
+    color: white;
+    width: 100%;
+    margin-top: -620px;
+    margin-left: 230px;
+    list-style: none;
+    padding: 10px;
+}
+
+.aboutPage_Text3 li {
+    text-decoration: underline;
+}
+
+.language_images {
     position: absolute;
     margin-top: -150px;
-    margin-left: 590px;
+    margin-left: 990px;
 }
 
-.aboutImgPlacement {
-    position: absolute;
-    margin-top: -210px;
-    margin-left: 720px;
+.landing_Imgs {
+    margin-top: -10px;
+    margin-left: -350px;
 }
 
 .reactLogoPlacement {
