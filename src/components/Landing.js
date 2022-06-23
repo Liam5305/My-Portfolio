@@ -29,23 +29,34 @@ const theme = createTheme({
 export default function LandingPageText() {
     return (
         <>
-            <Typography variant="h6" component="div" gutterBottom sx={{
-                color: 'white',
-                marginLeft: 30,
-                paddingTop: 10,
-                width: 350
-            }}>
-                Hi, I'm Liam. I'm Scottish and live in Glasgow and I love designing web applications.
+            <div className='landingPageText'>
+                <Typography variant="h6" component="div" gutterBottom sx={{
+                    color: 'white',
+                    marginLeft: 30,
+                    paddingTop: 10,
+                    width: 350
+                }}>
+                    Hi, I'm Liam. I'm Scottish and live in Glasgow and I love designing web applications.
+                    <br />
+                </Typography>
                 <br />
-            </Typography>
-            <br />
-            <ThemeProvider theme={theme}>
-                <Button component={Link} to="/about-page" variant="text" sx={{
-                    marginLeft: 29
-                }}>Learn More</Button>
-            </ThemeProvider>
-            <div className='landing_Imgs'>
-                <ImagePlacement />
+                <ThemeProvider theme={theme}>
+                    <Button component={Link} to="/about-page" variant="text" sx={{
+                        marginLeft: 29
+                    }}>Learn More</Button>
+                </ThemeProvider>
+                <div className='landing_Imgs'>
+                    <ImagePlacement />
+                </div>
+                <Typography variant="body1" component="div" gutterBottom sx={{
+                    color: 'white',
+                    marginLeft: 215,
+                    marginTop: 60,
+                    paddingtop: 50,
+                    width: 150
+                }}>
+                    Website created by Liam using React.Js, MaterialUI and CSS.
+                </Typography>
             </div>
         </>
     )
