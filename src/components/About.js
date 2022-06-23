@@ -3,6 +3,8 @@ import * as React from 'react'
 import { createTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
+import Box from '@mui/material/Box';
+
 const theme = createTheme({
     palette: {
         primary: {
@@ -34,7 +36,7 @@ export default function AboutPageText() {
                 paddingTop: 10
             }}>
 
-                <box>
+                <Box>
                     <div className='aboutPage_Text1'>
                         Hi, I'm Scottish and live in Glasgow. I enjoy building and designing web applications. I've always been interested with computers since I was younger.
                         <br />
@@ -81,7 +83,7 @@ export default function AboutPageText() {
                             <li>UI/UX Design</li>
                         </ul>
                     </div>
-                </box>
+                </Box>
             </Typography>
         </>
     )
