@@ -7,7 +7,12 @@ const useStyles = makeStyles(theme => ({
     root: {
         "& > *": {
             margin: theme.spacing(1),
-            width: "50ch"
+            width: "50ch",
+            display: "flex",
+            backgroundColor: "#c4c4c4",
+            textColor: "black",
+            color: "black",
+            padding: "15px"
         }
     }
 }));
@@ -30,7 +35,7 @@ function ContactPageText() {
 
     let errors = [];
     function ValidateEmail(email) {
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+        if (test(email)) {
             return true;
         }
         return false;
@@ -74,46 +79,53 @@ function ContactPageText() {
                     <div className="innerFormContainer">
                         <h2>Get in Touch!</h2>
                         <form className={classes.root}>
-                            <TextField 
-                            label="Name"
-                            placeholder="John Doe" 
-                            type="text"
-                            variant="outlined" 
-                            onChange={e => setYourName({ yourName: e.target.value })} 
+                            <TextField
+                                label="Name"
+                                placeholder="John Doe"
+                                type="text"
+                                variant="outlined"
+                                onChange={e => setYourName({ yourName: e.target.value })}
                             />
-                            <TextField 
-                            label="Email"
-                            placeholder="johndoe@gmail.com" 
-                            type="email"
-                            variant="outlined" 
-                            onChange={e => setEmail({ email: e.target.value })} 
+                            <TextField
+                                label="Email"
+                                placeholder="johndoe@gmail.com"
+                                type="email"
+                                variant="outlined"
+                                onChange={e => setEmail({ email: e.target.value })}
                             />
-                            <TextField 
-                            label="Subject"
-                            placeholder="Hey, how are ya?" 
-                            type="text"
-                            variant="outlined"  
-                            onChange={e => setSubject({ subject: e.target.value })} 
+                            <TextField
+                                label="Subject"
+                                placeholder="Hey, how are ya?"
+                                type="text"
+                                variant="outlined"
+                                onChange={e => setSubject({ subject: e.target.value })}
                             />
-                            <TextField 
-                            label="Message"
-                            placeholder="Can you help me with ..?" 
-                            type="text"
-                            variant="outlined"
-                            multiline
-                            rowsMax="3"  
-                            onChange={e => setMessage({ message: e.target.value })} 
+                            <TextField
+                                label="Message"
+                                placeholder="Can you help me with ..?"
+                                type="text"
+                                variant="outlined"
+                                multiline
+                                rowsMax="3"
+                                onChange={e => setMessage({ message: e.target.value })}
                             />
                             {showErrors
-                            ? errorMessages.map((item, index) => {
-                                return <ul key={index}>{item}</ul>
-                            })
-                        : null}
+                                ? errorMessages.map((item, index) => {
+                                    return <ul key={index}>{item}</ul>
+                                })
+                                : null}
                             <Button
-                            variant="contained" 
-                            color="primary" 
-                            type="button"
-                            onClick={formValidation}
+                                style={{
+                                    backgroundColor: "#c4c4c4",
+                                    padding: "5px",
+                                    fontSize: "18px",
+                                    width: "150px",
+                                    marginLeft: "130px"
+                                }}
+                                variant="contained"
+                                color="primary"
+                                type="button"
+                                onClick={formValidation}
                             >
                                 Send!
                             </Button>
