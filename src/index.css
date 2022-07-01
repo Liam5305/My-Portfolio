@@ -3,10 +3,11 @@ body {
 }
 
 .email-form {
-    background-color: #151515;
+    background-color: white;
+    margin-top: 50px;
     padding: 5px 5px 5px 5px;
     width: 300px;
-    border-radius: 35px;
+    border-radius: 25px;
     align-items: center;
 }
 
@@ -77,6 +78,8 @@ a:active {
     text-decoration: underline;
 }
 
+/* Images for various pages below */
+
 .language_images {
     position: absolute;
     margin-top: -150px;
@@ -108,12 +111,60 @@ a:active {
 
 .htmlLogoPlacement {
     position: absolute;
-    margin-top: -630px;
-    margin-left: -15px;
+    margin-top: -410px;
+    margin-left: -25px;
 }
 
-/* .cssLogoPlacement {
+.cssLogoPlacement {
     position: absolute;
-    margin-top: -610px;
-    margin-left: 30px;
+    margin-top: 85px;
+    margin-left: 930px;
+}
+
+.devOpsLogoPlacement {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 1100px;
+}
+
+.kubernetesLogoPlacement {
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 1110px;
+}
+
+.JavaLogoPlacement {
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 1260px;
+}
+
+.CSharpLogoPlacement {
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 1110px;
+}
+
+.AWSLogoPlacement {
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 1270px;
+}
+
+/* GitHub Link CSS */
+
+/* .GitHubs {
+    background-color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.GitHubs a:hover {
+    background-color: grey;
+    text-decoration: underline;
+}
+
+.GitHubs a:active {
+    text-decoration: underline;
+    background-color: grey;
 } */
