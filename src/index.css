@@ -156,6 +156,15 @@ a:active {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.outer_container_contact h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.linked_container {
+    position: relative;
+}
+
 /* GitHub Link CSS */
 
 /* .GitHubs {

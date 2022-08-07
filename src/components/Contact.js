@@ -1,136 +1,65 @@
-import React, { useState } from "react";
+import * as React from "react";
 
-import { TextField, Button } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import Button from "@mui/material/Button";
+import SendIcon from '@mui/icons-material/Send';
+import EmailIcon from '@mui/icons-material/Email';
 
-const useStyles = makeStyles(theme => ({
-    root: {
-        "& > *": {
-            margin: theme.spacing(1),
-            width: "50ch",
-            display: "flex",
-            backgroundColor: "#c4c4c4",
-            textColor: "black",
-            color: "black",
-            padding: "15px"
-        }
-    }
-}));
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
+
+import Linked_icon from "../components/imgs/Linked_in.png";
+import Email_icon from "../components/imgs/Email_icon.png"
+
+const theme = createTheme({
+    palette: {
+        primary: {
+
+            main: '#f2eded',
+
+        },
+        secondary: {
+            light: '#fff',
+            main: '#d3d3d3',
+
+            contrastText: '#fff',
+        },
+        contrastThreshold: 3,
+
+        tonalOffset: 0.2,
+    },
+});
 
 function ContactPageText() {
 
-    const classes = useStyles();
-
-    const [email, setEmail] = useState("");
-
-    const [yourName, setYourName] = useState("");
-
-    const [subject, setSubject] = useState("");
-
-    const [message, setMessage] = useState("");
-
-    const [errorMessages, setErrorMessages] = useState([]);
-
-    const [showErrors, setShowErrors] = useState(false);
-
-    let errors = [];
-    function ValidateEmail(email) {
-        if (test(email)) {
-            return true;
-        }
-        return false;
-    }
-
-    const formValidation = () => {
-        setErrorMessages([]);
-
-        const isNameValid = yourName !== "";
-        const isMessageValid = message !== "";
-        const isSubjectValid = subject !== "";
-
-        if (!isNameValid) {
-            errors.push("Name is not valid, please try again.");
-        }
-        if (!ValidateEmail(email)) {
-            errors.push("Email is not valid, please try again.");
-        }
-        if (email === "") {
-            errors.push("Email field is Empty, please try again");
-        }
-        if (!isMessageValid) {
-            errors.push("Message is not valid, please try again.");
-        }
-        if (!isSubjectValid) {
-            errors.push("Subject is not valid, please try again.");
-        }
-        if (errors.length > 0) {
-            setShowErrors({ showErrors: true });
-            setErrorMessages(errors);
-        } else {
-            setShowErrors({ showErrors: false });
-            alert("Email Sent");
-        }
-    };
-
     return (
         <>
-            <div className="container">
-                <div className="outerFormContainer">
-                    <div className="innerFormContainer">
-                        <h2>Get in Touch!</h2>
-                        <form className={classes.root}>
-                            <TextField
-                                label="Name"
-                                placeholder="John Doe"
-                                type="text"
-                                variant="outlined"
-                                onChange={e => setYourName({ yourName: e.target.value })}
-                            />
-                            <TextField
-                                label="Email"
-                                placeholder="johndoe@gmail.com"
-                                type="email"
-                                variant="outlined"
-                                onChange={e => setEmail({ email: e.target.value })}
-                            />
-                            <TextField
-                                label="Subject"
-                                placeholder="Hey, how are ya?"
-                                type="text"
-                                variant="outlined"
-                                onChange={e => setSubject({ subject: e.target.value })}
-                            />
-                            <TextField
-                                label="Message"
-                                placeholder="Can you help me with ..?"
-                                type="text"
-                                variant="outlined"
-                                multiline
-                                rowsMax="3"
-                                onChange={e => setMessage({ message: e.target.value })}
-                            />
-                            {showErrors
-                                ? errorMessages.map((item, index) => {
-                                    return <ul key={index}>{item}</ul>
-                                })
-                                : null}
-                            <Button
-                                style={{
-                                    backgroundColor: "#c4c4c4",
-                                    padding: "5px",
-                                    fontSize: "18px",
-                                    width: "150px",
-                                    marginLeft: "130px"
-                                }}
-                                variant="contained"
-                                color="primary"
-                                type="button"
-                                onClick={formValidation}
-                            >
-                                Send!
-                            </Button>
-                        </form>
-                    </div>
+            <div className="outer_container_contact">
+                <Typography variant="h3" component="div" gutterBottom sx={{
+                    color: 'white',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    marginTop: 15
+                }}>
+                    Contact Liam
+                    <br />
+                </Typography>
+                <Typography variant="h6" component="div" gutterBottom sx={{
+                    color: 'white',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    marginTop: 5
+                }}>
+                    Get in touch with me to get the ball rolling!
+                </Typography>
+                <div className="linked_container">
+                    <img src={Linked_icon} alt={"LinkedInIcon"} width='100' height='90' />
+                    <Button variant="contained" endIcon={<SendIcon />}>LinkedIn</Button>
+                </div>
+                <div className="email_container">
+                    <img src={Email_icon} alt={"EmailIcon"} width='100' height='90' />
+                    <Button variant="contained" endIcon={<EmailIcon />}>Email</Button>
                 </div>
             </div>
         </>
