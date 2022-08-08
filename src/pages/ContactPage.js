@@ -1,10 +1,12 @@
 import * as React from 'react'
-import ContactPageText from "../components/Contact.js";
+import ContactSelectables from "../components/Contact.js";
+import CustomizedAccordions from "../components/CollapsibleItems.js";
 
 export default function ContactPage() {
     return (
         <>
-            <ContactPageText />
+            <ContactSelectables />
+            <CustomizedAccordions />
         </>
     )
 }

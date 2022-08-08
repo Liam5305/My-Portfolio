@@ -1,35 +1,11 @@
 import * as React from "react";
 
-import Button from "@mui/material/Button";
-import SendIcon from '@mui/icons-material/Send';
-import EmailIcon from '@mui/icons-material/Email';
-
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
 import Linked_icon from "../components/imgs/Linked_in.png";
 import Email_icon from "../components/imgs/Email_icon.png"
 
-const theme = createTheme({
-    palette: {
-        primary: {
-
-            main: '#f2eded',
-
-        },
-        secondary: {
-            light: '#fff',
-            main: '#d3d3d3',
-
-            contrastText: '#fff',
-        },
-        contrastThreshold: 3,
-
-        tonalOffset: 0.2,
-    },
-});
-
-function ContactPageText() {
+function ContactSelectables() {
 
     return (
         <>
@@ -39,7 +15,8 @@ function ContactPageText() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    marginTop: 15
+                    marginTop: 15,
+                    textDecoration: 'underline'
                 }}>
                     Contact Liam
                     <br />
@@ -53,17 +30,21 @@ function ContactPageText() {
                 }}>
                     Get in touch with me to get the ball rolling!
                 </Typography>
-                <div className="linked_container">
-                    <img src={Linked_icon} alt={"LinkedInIcon"} width='100' height='90' />
-                    <Button variant="contained" endIcon={<SendIcon />}>LinkedIn</Button>
-                </div>
-                <div className="email_container">
-                    <img src={Email_icon} alt={"EmailIcon"} width='100' height='90' />
-                    <Button variant="contained" endIcon={<EmailIcon />}>Email</Button>
+                <div className="selectable_btns">
+                    <div className="linked_container">
+                        <a href="https://www.linkedin.com/in/liam-rutherford-54b9b3178/">
+                            <img src={Linked_icon} alt="LinkedIcon" className="LinkedInIcon" width='100' height='90' />
+                        </a>
+                    </div>
+                    <div className="email_container">
+                        <a href="mailto:liamrutherford10@gmail.com?body=Job Opportunity">
+                            <img src={Email_icon} alt="EmailIcon" className="EmailIcon" width='100' height='90' />
+                        </a>
+                    </div>
                 </div>
             </div>
         </>
     )
 }
 
-export default ContactPageText;
+export default ContactSelectables;
