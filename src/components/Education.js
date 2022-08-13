@@ -88,7 +88,7 @@ export default function EducationPageText() {
                         display: 'block',
                         float: 'right'
                     }}>
-                        In my third year at Glasgow Caledonian University, I was tasked to create a Exercise Planner which used Node.Js for the backend but for the Frontend, I had used HTML, CSS and Mustache pages to display it on the browser.
+                        Whilst still in my third year at Glasgow Caledonian University, I was tasked to create a Exercise Planner which used Node.Js for the backend but for the Frontend, I had used HTML, CSS and Mustache pages to display it on the browser.
                         <div className='htmlLogoPlacement' >
                             <img src={HtmlLogo} alt={"HtmlLogo"} width='150' height='140' />
                         </div>
@@ -97,6 +97,40 @@ export default function EducationPageText() {
                 {/* CSS Logo */}
                 <div className='cssLogoPlacement' >
                     <img src={CssLogo} alt={"CssLogo"} width='110' height='140' />
+                </div>
+                {/* React.Js Text */}
+                <div className='ReactBox'>
+                    <Typography variant='h6' component="div" gutterBottom sx={{
+                        width: 350,
+                        height: 200,
+                        color: 'white',
+                        marginRight: 180,
+                        marginTop: 28,
+                        display: 'block',
+                        float: 'right'
+                    }}>
+                        On the fourth year of University, I studied the following topics; Client-Side Web Development (React.Js), Secure Software Development, Mobile Platform Development (Java) and UI/UX Design.
+                        <br />
+                        <br />
+                        In the Client-Side Web Development class, I was tasked to create a Single Page Application which used a RESTAPI which I have detailed above to create a hostel list with reviews and able to create itineraries.
+                    </Typography>
+                </div>
+                {/* Java Text */}
+                <div className='JavaBox'>
+                    <Typography variant='h6' component="div" gutterBottom sx={{
+                        width: 400,
+                        height: 200,
+                        color: 'white',
+                        marginRight: 128,
+                        marginTop: -26,
+                        display: 'block',
+                        float: 'right'
+                    }}>
+                        For the Secure Software Development class, I was learning Brute Force Attacks, Dictionary Attacks, Password Sniffing, Spoofing, Man-In-The-Middle Attacks and SQL Injection Attacks.
+                        <br />
+                        <br />
+                        For the Mobile Platform Development class, I was learning how to create mobile applications for an Android Device using Java. We were tasked to create a Traffic Scotland app which had an array of features, such as; Landscape/Portrait Mode, Google Map Implementation, Pull data from an RSS feed
+                    </Typography>
                 </div>
                 {/* DevOps Logo */}
                 <div className='devOpsLogoPlacement' >

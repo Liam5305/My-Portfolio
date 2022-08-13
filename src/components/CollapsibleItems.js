@@ -51,7 +51,16 @@ export default function CustomizedAccordions() {
 
     return (
         <>
-            <h2>Text</h2>
+            <Typography variant="h6" component="div" gutterBottom sx={{
+                color: 'white',
+                display: 'flex',
+                alignItems: 'left',
+                justifyContent: 'left',
+                marginTop: 15,
+                textDecoration: 'underline'
+            }}>
+                Collapsible Items are a work in progress!
+            </Typography>
             <div>
                 {/* Drop Down Text Boxes */}
                 <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
@@ -60,7 +69,7 @@ export default function CustomizedAccordions() {
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography>
-                            TextDetails #1
+                            I commonly use JavaScript with the React.Js Library. I do hope to use C# more often and hopefully learn more about Python.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -70,7 +79,7 @@ export default function CustomizedAccordions() {
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography>
-                            TextDetails #2
+                            I don't have any work experience as I have recently graduated from Glasgow Caledonian University.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -80,7 +89,7 @@ export default function CustomizedAccordions() {
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography>
-                            TextDetails #3
+                            Yes, I am willing to relocate.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
