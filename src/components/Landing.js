@@ -36,7 +36,7 @@ export default function LandingPageText() {
                     paddingTop: 10,
                     width: 350
                 }}>
-                    Hi, I'm Liam. I'm Scottish and live in Glasgow and I love designing web applications.
+                    Hi, I'm Liam. I'm Scottish, live in Glasgow and I'm amazed by what lines of code can actually do.
                     <br />
                 </Typography>
                 <br />

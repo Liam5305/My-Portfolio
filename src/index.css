@@ -43,16 +43,47 @@ a:active {
     background-color: grey;
 }
 
-.aboutPage_Text1 {
-    color: white;
+.aboutPage {
+    color: black;
+    background-color: white;
     width: 100%;
     margin-top: -230px;
     margin-left: -380px;
     list-style: none;
     padding: 10px;
+    border-radius: 30px;
+    height: 800px;
 }
 
-.aboutPage_Text2 {
+.aboutSkills {
+    color: black;
+    background-color: white;
+    width: 100%;
+    margin-top:  -750px;
+    margin-left: -50px;
+    list-style: none;
+    padding: 10px;
+    border-radius: 30px;
+    height: 800px;
+}
+
+.aboutPage h1 {
+    text-align: center;
+}
+
+.aboutSkills h1 {
+    text-align: center;
+}
+
+/* .aboutPage_Text {
+    width: "100%";
+    background-color: white;
+    color: black;
+    padding: 50px;
+    float: left;
+} */
+
+/* .aboutPage_Text2 {
     color: white;
     width: 100%;
     margin-top: -725px;
@@ -76,7 +107,7 @@ a:active {
 
 .aboutPage_Text3 li {
     text-decoration: underline;
-}
+} */
 
 /* Images for various pages below */
 
