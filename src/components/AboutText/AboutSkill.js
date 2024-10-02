@@ -2,7 +2,6 @@ import * as React from 'react'
 
 import Typography from '@mui/material/Typography';
 
-
 import AboutContainer from '../../AboutContainer'
 
 export default function AboutSkills() {
