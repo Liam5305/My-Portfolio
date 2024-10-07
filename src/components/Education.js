@@ -6,7 +6,6 @@ import ReactLogo from "../components/imgs/ReactLogo.png";
 import JsLogo from "../components/imgs/JsLogo.png"
 import NodeLogo from "../components/imgs/NodeJs.png"
 import DevOpsLogo from "../components/imgs/other_imgs/DevOps.png"
-import KubernetesLogo from "../components/imgs/other_imgs/Kubernetes.png"
 import JavaLogo from "../components/imgs/other_imgs/Java.png"
 import CSharpLogo from "../components/imgs/other_imgs/CSharp.png"
 import AWSLogo from "../components/imgs/other_imgs/AWS.png"
@@ -135,11 +134,6 @@ export default function EducationPageText() {
                 {/* DevOps Logo */}
                 <div className='devOpsLogoPlacement' >
                     <img src={DevOpsLogo} alt={'DevOpsLogo'} width='300' height='150' />
-                </div>
-                {/* Kubernetes Logo */}
-                <div className='kubernetesLogoPlacement' >
-                    <img src={KubernetesLogo} alt={'KubernetesLogo'}
-                        width='150' height='150' />
                 </div>
                 {/* Java Logo */}
                 <div className='JavaLogoPlacement' >

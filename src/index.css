@@ -43,9 +43,13 @@ a:active {
     background-color: grey;
 }
 
+.WorkContent li {
+    margin-left: 18px;
+}
+
 .aboutPage {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: rgb(31, 31, 31);
     width: 100%;
     margin-top: -230px;
     margin-left: -380px;
@@ -56,8 +60,8 @@ a:active {
 }
 
 .aboutSkills {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: rgb(31, 31, 31);
     width: 100%;
     margin-top:  -750px;
     margin-left: -50px;

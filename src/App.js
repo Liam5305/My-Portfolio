@@ -20,18 +20,18 @@ function App() {
           <div className="header">
             <ul className="nav">
               <li><NavLink to ="/">Home</NavLink></li>
-              <li><NavLink to ="/about-page">About Me</NavLink></li>
-              <li><NavLink to ="/my-education">My Education</NavLink></li>
-              <li><NavLink to ="/contact-me">Contact Me</NavLink></li>
+              <li><NavLink to ="/about">About Me</NavLink></li>
+              <li><NavLink to ="/experience">My Experience</NavLink></li>
+              <li><NavLink to ="/contact">Contact Me</NavLink></li>
             </ul>
           </div>
         </div>
         <div className="content">
           <Routes>
             <Route exact path="/" element={<LandingPage />} />
-            <Route path="/about-page" element={<AboutPage />} />
-            <Route path="/my-education" element={<EducationPage />} />
-            <Route path="/contact-me" element={<ContactPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/experience" element={<EducationPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </div>
       </HashRouter>
